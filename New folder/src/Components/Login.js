@@ -13,9 +13,9 @@ function Login() {
   function handleLogin(e) {
     e.preventDefault();
     let pass = localStorage
-      .getItem("sanskarPassword")
+      .getItem("Password")
       .replace(/"/g, "");
-    let mail = localStorage.getItem("sanskarEmail").replace(/"/g, "");
+    let mail = localStorage.getItem("Email").replace(/"/g, "");
     
 
     if (!emaillog || !passwordlog) {
